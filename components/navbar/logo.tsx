@@ -4,6 +4,6 @@ export const Logo = () => (
     style={{ fontFamily: "'Fira Code', 'JetBrains Mono', 'Courier New', monospace" }}
   >
     <span className="text-black dark:text-white">wiki</span>
-    <span className="text-muted-foreground">dotexe</span>
+    <span className="text-muted-foreground">dotexe.</span>
   </h1>
 );

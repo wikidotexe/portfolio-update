@@ -1,24 +1,29 @@
+"use client";
+
 import { Separator } from "@/components/ui/separator";
-import Link from "next/link";
 import { Logo } from "../components/navbar/logo";
 import { GithubLogo, LinkedinLogo } from "./icons";
 
 const footerLinks = [
-  {
-    title: "About",
-    href: "#about",
-  },
-  {
-    title: "Experience",
-    href: "#experience",
-  },
-  {
-    title: "Projects",
-    href: "#projects",
-  },
+  { title: "About", href: "#about" },
+  { title: "Experience", href: "#experience" },
+  { title: "Certificate", href: "#certificate" },
+  { title: "Projects", href: "#projects" },
 ];
 
 const Footer = () => {
+  // fungsi buat smooth scroll
+  const handleScroll = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    targetId: string
+  ) => {
+    e.preventDefault();
+    const section = document.getElementById(targetId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
   return (
     <footer className="mt-20">
       <div className="max-w-screen-md mx-auto">
@@ -28,17 +33,20 @@ const Footer = () => {
           <ul className="mt-6 flex items-center gap-4 flex-wrap">
             {footerLinks.map(({ title, href }) => (
               <li key={title}>
-                <Link
+                <a
                   href={href}
-                  className="text-muted-foreground hover:text-foreground"
+                  onClick={(e) => handleScroll(e, href.replace("#", ""))}
+                  className="text-muted-foreground hover:text-foreground transition-colors duration-200"
                 >
                   {title}
-                </Link>
+                </a>
               </li>
             ))}
           </ul>
         </div>
+
         <Separator />
+
         <div className="py-6 flex flex-col-reverse sm:flex-row items-center justify-between gap-x-2 gap-y-5 px-6 xl:px-0">
           {/* Copyright */}
           <span className="text-muted-foreground">
@@ -46,12 +54,20 @@ const Footer = () => {
           </span>
 
           <div className="flex items-center gap-5 text-muted-foreground">
-            <Link href="#" target="_blank">
-              <GithubLogo className="h-5 w-5" />
-            </Link>
-            <Link href="#" target="_blank">
-              <LinkedinLogo className="h-5 w-5" />
-            </Link>
+            <a
+              href="https://github.com/username"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <GithubLogo className="h-5 w-5 hover:text-foreground transition-colors" />
+            </a>
+            <a
+              href="https://linkedin.com/in/username"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <LinkedinLogo className="h-5 w-5 hover:text-foreground transition-colors" />
+            </a>
           </div>
         </div>
       </div>

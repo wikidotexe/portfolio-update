@@ -23,15 +23,16 @@ const Certificatecard = ({
 }: CertificatetCardProps) => {
   return (
     <div className="group relative flex flex-col overflow-hidden rounded-xl border border-accent transition-all hover:border-primary/50">
-      {/* Project Image */}
-      <div className="relative h-64 overflow-hidden bg-accent">
-        <Image
-          src={image}
-          alt={title}
-          className="object-cover transition-transform duration-300 group-hover:scale-105"
-          fill
-        />
-      </div>
+        {/* Project Image */}
+        <div className="relative h-64 overflow-hidden bg-white flex items-center justify-center">
+            <Image
+            src={image}
+            alt={title}
+            className="object-contain transition-transform duration-300 group-hover:scale-105 p-5 mt-2"
+            fill
+            />
+        </div>
+
 
       {/* Content */}
       <div className="flex-1 flex flex-col p-6">
@@ -53,7 +54,7 @@ const Certificatecard = ({
             <Button variant="default" className="rounded-full" asChild>
               <a href={liveUrl} target="_blank" rel="noopener noreferrer">
                 <ExternalLink className="mr-1 h-4 w-4" />
-                Live Demo
+                Show Credentials
               </a>
             </Button>
           )}
@@ -78,40 +79,52 @@ const Certificatecard = ({
 const Certificate = () => {
   const certificate = [
     {
-      title: "E-Commerce Platform",
-      description:
-        "A full-featured e-commerce platform with real-time inventory management, payment processing, and admin dashboard.",
-      image: "/placeholder.svg",
-      technologies: ["Next.js", "TypeScript", "Stripe", "Prisma", "PostgreSQL"],
-      liveUrl: "https://ecommerce-demo.com",
-      githubUrl: "https://github.com/username/ecommerce",
+    title: "Technical Support Basics",
+    description:
+        "Learned core IT support skills including troubleshooting, system maintenance, and customer assistance.",
+    image: "/images/certificated/google.jpg",
+    technologies: ["Google", "Coursera"],
+    liveUrl: "https://coursera.org/verify/K6K3V3QEE5NT",
     },
     {
-      title: "AI Task Manager",
-      description:
-        "Smart task management app that uses AI to categorize, prioritize, and suggest optimal task scheduling.",
-      image: "/placeholder.svg",
-      technologies: ["React", "Python", "TensorFlow", "FastAPI", "MongoDB"],
-      liveUrl: "https://ai-taskmanager.com",
-      githubUrl: "https://github.com/username/ai-taskmanager",
+    title: "Introduction to Technical Support",
+    description:
+        "Gained foundational knowledge of IT support principles and service management practices.",
+    image: "/images/certificated/ibm.jpg",
+    technologies: ["IBM", "Coursera"],
+    liveUrl: "https://coursera.org/verify/4QWG2T2DD3BY",
     },
     {
-      title: "Real-time Chat Application",
-      description:
-        "Feature-rich chat application with real-time messaging, file sharing, and video calls.",
-      image: "/placeholder.svg",
-      technologies: ["React", "Socket.io", "WebRTC", "Node.js", "Redis"],
-      liveUrl: "https://chatapp-demo.com",
-      githubUrl: "https://github.com/username/chat-app",
+    title: "Learn Computer Networks for Beginners",
+    description:
+        "Studied the fundamentals of computer networking, IP addressing, and data transmission.",
+    image: "/images/certificated/dicoding.jpg",
+    technologies: ["ID Camp", "Dicoding"],
+    liveUrl: "https://www.dicoding.com/certificates/0LZ0QEW60Z65",
     },
     {
-      title: "AI Image Generator",
-      description:
-        "An AI image generator that uses a model to generate images based on a prompt.",
-      image: "/placeholder.svg",
-      technologies: ["React", "Next.js", "Tailwind CSS", "Shadcn UI"],
-      liveUrl: "https://ai-image-generator.com",
-      githubUrl: "https://github.com/username/ai-image-generator",
+    title: "Learn DevOps Fundamentals",
+    description:
+        "Explored DevOps concepts, CI/CD pipelines, and automation for modern software deployment.",
+    image: "/images/certificated/dicoding2.jpg",
+    technologies: ["ID Camp", "Dicoding"],
+    liveUrl: "https://www.dicoding.com/certificates/4EXG4O60DPRL",
+    },
+    {
+    title: "Desktop IT Support Level 1 & 2 in Real Life",
+    description:
+        "Hands-on training in hardware troubleshooting, OS installation, and desktop support workflows.",
+    image: "/images/certificated/udemy.jpg",
+    technologies: ["Tareq Tech", "Udemy"],
+    liveUrl: "https://www.udemy.com/certificate/UC-2e95edd4-f26c-4941-a9df-f5d79d86404e/",
+    },
+    {
+    title: "Mastering Docker from Basics to Practice",
+    description:
+        "Learned Docker fundamentals, image management, and container deployment for development environments.",
+    image: "/images/certificated/docker.jpg",
+    technologies: ["Tri Wicaksono", "Buildwithangga"],
+    liveUrl: "#",
     },
   ];
 
@@ -126,7 +139,7 @@ const Certificate = () => {
             Certificate Finishup
           </h2>
           <p className="text-muted-foreground mt-2 sm:mt-4 text-lg">
-            Showcasing some of my best projects and technical achievements
+            Showcasing some of my best certificate and growth achievements
           </p>
         </div>
 

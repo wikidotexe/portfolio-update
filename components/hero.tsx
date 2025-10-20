@@ -1,3 +1,5 @@
+"use client";
+
 import AnimatedGridPattern from "@/components/ui/animated-grid-pattern";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -28,7 +30,14 @@ const Hero = () => {
           Hey there! I&apos;m Dwiki Arlian Maulana, an IT Support &amp; System Engineer with 4 years of experience. I&apos;m passionate about keeping systems running smoothly, solving complex tech issues, and optimizing network performance. From troubleshooting to infrastructure management, I make sure everything just works — fast, secure, and reliable. Let&apos;s build something awesome together! 🚀
         </p>
         <div className="mt-12 flex items-center justify-center gap-4">
-          <Button size="lg" className="rounded-full text-base">
+          <Button
+            size="lg"
+            className="rounded-full text-base"
+            onClick={() => {
+              const aboutSection = document.getElementById("about");
+              aboutSection?.scrollIntoView({ behavior: "smooth" });
+            }}
+          >
             See What I Do <CircleArrowDown className="ml-2 !h-5.5 !w-5.5" />
           </Button>
         </div>
