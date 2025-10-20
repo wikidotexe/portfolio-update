@@ -1,57 +1,112 @@
-# Beautiful Portfolio Template
+![logo wikidotexe](https://github.com/user-attachments/assets/da82fc30-1dbe-48bf-b57c-033dec2ceb9d)
 
-A modern and responsive portfolio template built with Next.js, Tailwind CSS, and Shadcn UI, and Shadcn UI Blocks.
+# Portfolio Modern
 
-## Demo
+[![GitHub Stars](https://img.shields.io/github/stars/wikidotexe/Portfolio-modern?style=social)](https://github.com/wikidotexe/Portfolio-modern/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forks/wikidotexe/Portfolio-modern?style=social)](https://github.com/wikidotexe/Portfolio-modern/network)
 
-[Live Demo](https://shadcn-portfolio-template.vercel.app/)
+Portfolio-modern ini adalah proyek Next.js yang dirancang untuk menampilkan portofolio dengan desain modern, responsif, dan menarik. Proyek ini memberikan pengalaman pengguna yang optimal dengan performa tinggi.
 
-## Preview
+> **Status Proyek**: 🚀 Aktif Dikembangkan
 
-![Preview](./public/preview.png)
+---
 
-## Features
+## 🔍 **Fitur Utama**
 
-- 🎨 Modern and clean design
-- 📱 Fully responsive layout
-- 🎯 Built with Next.js 15
-- 💅 Styled with Tailwind CSS `4.0`
-- 🧩 Built with [Shadcn UI](https://ui.shadcn.com) and [Shadcn UI Blocks](https://shadcnui-blocks.com)
-- 🌙 Dark mode support
+- 🎨 **Desain Modern**:
+  - Dibangun dengan **Next.js** dan antarmuka yang memukau.
+- 📱 **Responsif**:
+  - Desain yang menyesuaikan di berbagai perangkat, baik desktop maupun mobile.
+- ⚡ **Performa Tinggi**:
+  - Didukung oleh optimasi bawaan Next.js untuk kecepatan maksimal.
+- 🌐 **Tipografi Elegan**:
+  - Menggunakan font [Geist](https://vercel.com/font) dari Vercel untuk tampilan teks yang bersih.
+- 🚀 **Siap Dideploy**:
+  - Integrasi mudah dengan platform deployment seperti Vercel.
 
-## Getting Started
+---
 
-1. Clone the repository:
+## 📂 **Struktur Proyek**
 
-```bash
-git clone https://github.com/akash3444/portfolio-template.git
-cd shadcn-ui-landing-page
+```
+Portfolio-modern/
+├── app/
+├── components/
+├── pages/
+├── public/
+├── styles/
+├── .env.local
+├── .gitignore
+├── next.config.js
+├── package.json
+└── README.md
 ```
 
-2. Install dependencies:
+---
 
-```bash
-npm install
-```
+## 🎯 **Cara Install**
 
-3. Start the development server:
+1. **Clone Repository**:
 
-```bash
-npm run dev
-```
+   ```bash
+   git clone https://github.com/wikidotexe/Portfolio-modern.git
+   cd Portfolio-modern
+   ```
 
-4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
+2. **Install Dependencies**:
+   Pastikan Anda sudah menginstal [Node.js](https://nodejs.org/) dan [npm](https://www.npmjs.com/).
 
-## Customization
+   ```bash
+   npm install
+   ```
 
-1. Replace the placeholder images with your own content.
-2. Modify the text and styles in the components to match your brand and messaging.
-3. Add your own features and sections as needed.
+3. **Setup Environment**:
+   Buat file `.env.local` dan sesuaikan dengan kebutuhan proyek Anda.
 
-## Why this template?
+4. **Run Development Server**:
+   Jalankan server pengembangan dengan perintah berikut:
 
-This project is a base template for a portfolio. It is built with Next.js, Tailwind CSS, Shadcn UI, and Shadcn UI Blocks. It is a great starting point for a portfolio. You can customized the content and media files as per your needs. It is not intended to be a complete solution for a portfolio. It is intended to be a starting point for a portfolio.
+   ```bash
+   npm run dev
+   ```
 
-## Contributing
+   Kemudian buka `http://localhost:3000` di browser Anda.
 
-If you have any suggestions or improvements, please create an issue or submit a pull request.
+---
+
+## 🚀 **Deploy ke Vercel**
+
+1. Push kode Anda ke repository GitHub.
+2. Hubungkan repository Anda ke [Vercel](https://vercel.com/).
+3. Nikmati build dan deployment otomatis.
+
+Detail lebih lanjut dapat ditemukan di [dokumentasi Next.js](https://nextjs.org/docs/deployment).
+
+---
+
+## 📜 **Kontribusi**
+
+Kami menyambut kontribusi dari siapa pun yang ingin membantu pengembangan proyek ini. Berikut langkah-langkah untuk berkontribusi:
+
+1. Fork repositori ini.
+2. Buat branch fitur baru:
+   ```bash
+   git checkout -b fitur-keren
+   ```
+3. Commit perubahan Anda:
+   ```bash
+   git commit -m "Menambahkan fitur keren"
+   ```
+4. Push ke branch Anda:
+   ```bash
+   git push origin fitur-keren
+   ```
+5. Buat **Pull Request** di GitHub.
+
+---
+
+## 🌟 **Terima Kasih**
+
+Terima kasih telah mengunjungi repositori ini! Jika Anda merasa proyek ini bermanfaat, jangan ragu untuk memberikan ⭐ dan share kepada teman-teman Anda.
+
+Happy coding! 🎉

@@ -55,14 +55,14 @@ const Footer = () => {
 
           <div className="flex items-center gap-5 text-muted-foreground">
             <a
-              href="https://github.com/username"
+              href="https://github.com/wikidotexe"
               target="_blank"
               rel="noopener noreferrer"
             >
               <GithubLogo className="h-5 w-5 hover:text-foreground transition-colors" />
             </a>
             <a
-              href="https://linkedin.com/in/username"
+              href="https://www.linkedin.com/in/dwiki-arlian-maulana-852b14209/details/certifications/"
               target="_blank"
               rel="noopener noreferrer"
             >
