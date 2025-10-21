@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     siteName: "Wikidotexe",
     images: [
       {
-        url: "/images/og-image.jpg", // tambahin nanti di /public/images/
+        url: "/images/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Wikidotexe Portfolio Preview",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     title: "Wikidotexe | Dwiki Arlian Maulana",
     description: "IT Support & System Engineer — exploring systems, networks, and performance optimization.",
     images: ["/images/og-image.jpg"],
-    creator: "@wikidotexe", // opsional, bisa diisi username X kamu
+    creator: "@wikidotexe",
   },
   icons: {
     icon: "/favicon.ico",

@@ -1,13 +1,13 @@
 "use client";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import "./loader.css"; // kita taruh CSS loader di file terpisah biar rapi
+import "./loader.css";
 
 export default function LoadingScreen() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => setIsLoading(false), 2000); // durasi loading
+    const timer = setTimeout(() => setIsLoading(false), 2000);
     return () => clearTimeout(timer);
   }, []);
 

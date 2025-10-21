@@ -35,6 +35,7 @@ Portfolio-modern/
 ├── lib/
 ├── styles/
 ├── public/
+├── .env.local/
 ├── .gitignore
 ├── Dockerfile
 ├── next.config.js
@@ -60,7 +61,10 @@ Portfolio-modern/
    npm install
    ```
 
-3. **Run Development Server**:
+3. **Setup Environment**:
+   Buat file `.env.local` dan sesuaikan dengan kebutuhan proyek Anda.
+
+4. **Run Development Server**:
    Jalankan server pengembangan dengan perintah berikut:
 
    ```bash
