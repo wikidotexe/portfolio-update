@@ -14,7 +14,6 @@ const footerLinks = [
 ];
 
 const Footer = () => {
-  // fungsi buat smooth scroll
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
     e.preventDefault();
     const section = document.getElementById(targetId);
@@ -25,11 +24,13 @@ const Footer = () => {
 
   return (
     <footer className="mt-20">
-      <div className="max-w-screen-md mx-auto">
-        <div className="py-12 flex flex-col justify-start items-center">
+      <div className="max-w-screen-md mx-auto px-6">
+        {/* Section atas: Logo + link navigasi */}
+        <div className="py-12 flex flex-col justify-start items-center text-center">
           <Logo />
 
-          <ul className="mt-6 flex items-center gap-4 flex-wrap">
+          {/* Link navigasi footer */}
+          <ul className="mt-6 flex flex-wrap justify-center items-center gap-x-6 gap-y-3 text-sm sm:text-base">
             {footerLinks.map(({ title, href }) => (
               <li key={title}>
                 <a href={href} onClick={(e) => handleScroll(e, href.replace("#", ""))} className="text-muted-foreground hover:text-foreground transition-colors duration-200">
@@ -42,9 +43,9 @@ const Footer = () => {
 
         <Separator />
 
-        <div className="py-6 flex flex-col-reverse sm:flex-row items-center justify-between gap-x-2 gap-y-5 px-6 xl:px-0">
-          {/* Copyright */}
-          <span className="text-muted-foreground">&copy; {new Date().getFullYear()} wikidotexe. All rights reserved.</span>
+        {/* Section bawah: copyright + social */}
+        <div className="py-6 flex flex-col-reverse sm:flex-row items-center justify-between gap-x-4 gap-y-5 text-center sm:text-left">
+          <span className="text-muted-foreground text-sm">&copy; {new Date().getFullYear()} wikidotexe. All rights reserved.</span>
 
           <div className="flex items-center gap-5 text-muted-foreground">
             <a href="https://github.com/wikidotexe" target="_blank" rel="noopener noreferrer">
