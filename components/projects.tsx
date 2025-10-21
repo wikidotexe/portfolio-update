@@ -86,7 +86,7 @@ const Projects = () => {
       githubUrl: "https://github.com/wikidotexe/cv-teknikmandiri",
     },
     {
-      title: "Cloud Computing",
+      title: "Nextcloud, Cloud Computing",
       description: "Setting Up a Home Server self-hosted Using NextCloud with the Linux Ubuntu Server Operating System.",
       image: "/images/project/cloud.png",
       technologies: ["Nextcloud", "Docker", "Mysql", "Nginx", "Linux", "Cloudflare", "Redis", "DDNS"],

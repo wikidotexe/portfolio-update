@@ -1,7 +1,7 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { Download } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import Image from "next/image";
 import { HTMLAttributes } from "react";
 import { GithubLogo } from "./icons";
@@ -34,7 +34,7 @@ const About = () => {
 
               <Button asChild variant="outline" className="rounded-full">
                 <a href="https://drive.wikiarlianm.com/d/s/156OVXXh6z7FeJ8qz3U4e9Gesn7C7M2i/p11ZwT3OxUclXGQU8QYAAKDplqqDtbkW-Sb7gB9s3mww" target="_blank">
-                  <Download className="mr-2" />
+                  <ExternalLink className="mr-2" />
                   Resume
                 </a>
               </Button>

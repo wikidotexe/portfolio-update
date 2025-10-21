@@ -5,7 +5,7 @@
 [![GitHub Stars](https://img.shields.io/github/stars/wikidotexe/Portfolio-modern?style=social)](https://github.com/wikidotexe/Portfolio-modern/stargazers)
 [![GitHub Forks](https://img.shields.io/github/forks/wikidotexe/Portfolio-modern?style=social)](https://github.com/wikidotexe/Portfolio-modern/network)
 
-Portfolio-modern ini adalah proyek Next.js yang dirancang untuk menampilkan portofolio dengan desain modern, responsif, dan menarik. Proyek ini memberikan pengalaman pengguna yang optimal dengan performa tinggi.
+Portfolio-modern V2, ini adalah proyek Next.js yang dirancang untuk menampilkan portofolio dengan desain modern, responsif, dan menarik. Proyek ini memberikan pengalaman pengguna yang optimal dengan performa tinggi.
 
 > **Status Proyek**: 🚀 Aktif Dikembangkan
 
@@ -32,11 +32,11 @@ Portfolio-modern ini adalah proyek Next.js yang dirancang untuk menampilkan port
 Portfolio-modern/
 ├── app/
 ├── components/
-├── pages/
-├── public/
+├── lib/
 ├── styles/
-├── .env.local
+├── public/
 ├── .gitignore
+├── Dockerfile
 ├── next.config.js
 ├── package.json
 └── README.md
@@ -49,7 +49,7 @@ Portfolio-modern/
 1. **Clone Repository**:
 
    ```bash
-   git clone https://github.com/wikidotexe/Portfolio-modern.git
+   git clone https://github.com/wikidotexe/portfolio-update
    cd Portfolio-modern
    ```
 
@@ -60,10 +60,7 @@ Portfolio-modern/
    npm install
    ```
 
-3. **Setup Environment**:
-   Buat file `.env.local` dan sesuaikan dengan kebutuhan proyek Anda.
-
-4. **Run Development Server**:
+3. **Run Development Server**:
    Jalankan server pengembangan dengan perintah berikut:
 
    ```bash
