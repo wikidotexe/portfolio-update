@@ -48,12 +48,20 @@ const ExperienceItem = ({ title, company, period, description, technologies }: E
 const Experience = () => {
   const experiences = [
     {
+      title: "IT Support & System",
+      company: "Saff & Co.",
+      period: "2025 - Present",
+      description:
+        "Managed network infrastructure, server configurations, and end-user systems across multiple locations. Deployed VPN and firewall solutions, maintained private cloud environments, and provided on-site and remote technical support for business operations.",
+      technologies: ["Ubiquiti", "Synology", "Linux", "Rustdesk", "Network", "OpenVPN", "WSL", "Docker", "Shopify", "Cloudflare"],
+    },
+    {
       title: "IT Support",
       company: "BLP Beauty",
       period: "2021 - 2025",
       description:
         "Managed network infrastructure, server configurations, and end-user systems across multiple locations. Deployed VPN and firewall solutions, maintained private cloud environments, and provided on-site and remote technical support for business operations.",
-      technologies: ["MikroTik", "Synology NAS", "Linux", "Windows Server", "OpenVPN", "WSL", "Docker", "Shopify", "Cloudflare"],
+      technologies: ["MikroTik", "Synology NAS", "Linux", "Rustdesk", "Network", "OpenVPN", "WSL", "Docker", "Shopify", "Cloudflare"],
     },
 
     {

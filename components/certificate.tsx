@@ -101,7 +101,7 @@ const Certificate = () => {
       description: "Learned Docker fundamentals, image management, and container deployment for development environments.",
       image: "/images/certificated/docker.jpg",
       technologies: ["Tri Wicaksono", "Buildwithangga"],
-      liveUrl: "#",
+      liveUrl: "https://buildwithangga.com/",
     },
   ];
 

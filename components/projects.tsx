@@ -89,7 +89,7 @@ const Projects = () => {
       title: "Cloud Computing",
       description: "Setting Up a Home Server self-hosted Using NextCloud with the Linux Ubuntu Server Operating System.",
       image: "/images/project/cloud.png",
-      technologies: ["Nextcloud", "Docker", "Mysql", "Nginx", "Linux", "Cloudflare", "Redis"],
+      technologies: ["Nextcloud", "Docker", "Mysql", "Nginx", "Linux", "Cloudflare", "Redis", "DDNS"],
       liveUrl: "https://nextcloud.com/instant-trial/",
       // githubUrl: "https://github.com/nextcloud",
     },
@@ -119,11 +119,19 @@ const Projects = () => {
     },
     {
       title: "Mikrotik Hotspot Monitoring",
-      description: "Implemented and configured Synology NAS at PT Lizzie Parra Kreasi (BLP Beauty), delivering advanced storage solutions.",
+      description: "We installed a hotspot system at PT Lizzie Parra Kreasi for 100+ employees, with a user-friendly login page for easy access.",
       image: "/images/project/mikhmon.png",
       technologies: ["Mikrotik", "Winbox", "Rest-API", "Webserver", "Nginx Reverse Proxy", "SSL/TLS", "Certificate", "DHCP Server", "Port-forwarding"],
       liveUrl: "https://mikhmon.comonet.id/admin.php?id=login",
       githubUrl: "https://github.com/laksa19/mikhmonv3",
+    },
+    {
+      title: "Rustdesk, Setup self hosted",
+      description: "Implemented and configured a self-hosted Rustdesk setup on Synology NAS at PT Lizzie Parra Kreasi (BLP Beauty) and providing secure remote access.",
+      image: "/images/project/Rustdesk.png",
+      technologies: ["Docker", "Port-forwarding", "Rest-API", "Winbox", "Nginx Reverse Proxy", "Remote desktop", "DDNS"],
+      liveUrl: "https://rustdesk.com/web/",
+      // githubUrl: "https://github.com/laksa19/mikhmonv3",
     },
   ];
 
