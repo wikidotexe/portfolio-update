@@ -9,6 +9,8 @@ const footerLinks = [
   { title: "Experience", href: "#experience" },
   { title: "Certificate", href: "#certificate" },
   { title: "Projects", href: "#projects" },
+  { title: "Skills", href: "#skills" },
+  { title: "Contact", href: "#contact" },
 ];
 
 const Footer = () => {
