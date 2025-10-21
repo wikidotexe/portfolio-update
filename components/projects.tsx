@@ -49,7 +49,7 @@ const ProjectCard = ({ title, description, image, technologies, liveUrl, githubU
             <Button variant="outline" className="rounded-full shadow-none" asChild>
               <a href={githubUrl} target="_blank" rel="noopener noreferrer">
                 <GithubLogo className="mr-1 h-4 w-4" />
-                View Code
+                Code/Docs
               </a>
             </Button>
           )}
@@ -131,6 +131,14 @@ const Projects = () => {
       image: "/images/project/Rustdesk.png",
       technologies: ["Docker", "Port-forwarding", "Rest-API", "Winbox", "Nginx Reverse Proxy", "Remote desktop", "DDNS"],
       liveUrl: "https://rustdesk.com/web/",
+      // githubUrl: "https://github.com/laksa19/mikhmonv3",
+    },
+    {
+      title: "CasaOS, Setup dashboard server for VPS CLI",
+      description: "Configured CasaOS at PT Lizzie Parra Kreasi (BLP Beauty) as a web-based dashboard to manage VPS via CLI, integrating Docker, Nginx reverse proxy, and secure remote access with DDNS.",
+      image: "/images/project/casaos.jpg",
+      technologies: ["Docker", "Port-forwarding", "casaos", "linux", "Nginx Reverse Proxy", "Remote desktop", "DDNS"],
+      liveUrl: "https://casaos.zimaspace.com/",
       // githubUrl: "https://github.com/laksa19/mikhmonv3",
     },
   ];
