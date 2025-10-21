@@ -7,10 +7,10 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "3000:3000" #port open container
+      - "3000:3000" #port untuk di expose
     env_file:
       - .env.local
     volumes:
-      - /[yourfolder]/[yourfolder]/[yourfolder]/Portfolio:/app
-      - /app/node_modules
-    restart: unless-stopped
+      - ./public:/app/public
+      - ./package.json:/app/package.json
+    restart: always

@@ -37,6 +37,7 @@ Portfolio-modern/
 ├── public/
 ├── .env.local/
 ├── .gitignore
+├── docker-compose.yml
 ├── Dockerfile
 ├── next.config.js
 ├── package.json
