@@ -119,7 +119,7 @@ const Projects = () => {
     },
     {
       title: "Mikrotik Hotspot Monitoring",
-      description: "We installed a hotspot system at PT Lizzie Parra Kreasi for 100+ employees, with a user-friendly login page for easy access.",
+      description: "We installed a hotspot system at PT Lizzie Parra Kreasi (BLP Beauty) for 100+ employees, with a user-friendly login page for easy access.",
       image: "/images/project/mikhmon.png",
       technologies: ["Mikrotik", "Winbox", "Rest-API", "Webserver", "Nginx Reverse Proxy", "SSL/TLS", "Certificate", "DHCP Server", "Port-forwarding"],
       liveUrl: "https://mikhmon.comonet.id/admin.php?id=login",
