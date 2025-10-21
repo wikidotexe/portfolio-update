@@ -10,13 +10,11 @@ const geistSans = Geist({
 
 export const metadata: Metadata = {
   title: "Wikidotexe | Dwiki Arlian Maulana",
-  description:
-    "Portfolio of Dwiki Arlian Maulana — IT Support & System Engineer with 4 years of experience optimizing systems, networks, and infrastructure.",
+  description: "Portfolio of Dwiki Arlian Maulana — IT Support & System Engineer with 4 years of experience optimizing systems, networks, and infrastructure.",
   metadataBase: new URL("https://about.wikiarlianm.com"), // ganti sama domain kamu nanti
   openGraph: {
     title: "Wikidotexe | Dwiki Arlian Maulana",
-    description:
-      "Explore the portfolio of Dwiki Arlian Maulana — IT Support & System Engineer with 4 years of experience in system optimization, networking, and tech innovation.",
+    description: "Explore the portfolio of Dwiki Arlian Maulana — IT Support & System Engineer with 4 years of experience in system optimization, networking, and tech innovation.",
     url: "https://about.wikiarlianm.com",
     siteName: "Wikidotexe",
     images: [
@@ -33,8 +31,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Wikidotexe | Dwiki Arlian Maulana",
-    description:
-      "IT Support & System Engineer — exploring systems, networks, and performance optimization.",
+    description: "IT Support & System Engineer — exploring systems, networks, and performance optimization.",
     images: ["/images/og-image.jpg"],
     creator: "@wikidotexe", // opsional, bisa diisi username X kamu
   },

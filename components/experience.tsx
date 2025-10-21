@@ -9,13 +9,7 @@ interface ExperienceItemProps {
   technologies: string[];
 }
 
-const ExperienceItem = ({
-  title,
-  company,
-  period,
-  description,
-  technologies,
-}: ExperienceItemProps) => {
+const ExperienceItem = ({ title, company, period, description, technologies }: ExperienceItemProps) => {
   return (
     <div className="relative pl-8 not-last:pb-12">
       {/* Timeline line */}
@@ -59,33 +53,21 @@ const Experience = () => {
       period: "2021 - 2025",
       description:
         "Managed network infrastructure, server configurations, and end-user systems across multiple locations. Deployed VPN and firewall solutions, maintained private cloud environments, and provided on-site and remote technical support for business operations.",
-      technologies: [
-        "MikroTik",
-        "Synology NAS",
-        "Linux",
-        "Windows Server",
-        "OpenVPN",
-        "WSL",
-        "Docker",
-        "Shopify",
-        "Cloudflare"
-      ],
+      technologies: ["MikroTik", "Synology NAS", "Linux", "Windows Server", "OpenVPN", "WSL", "Docker", "Shopify", "Cloudflare"],
     },
 
     {
       title: "IT Technician",
       company: "PT. Smartindo Integrasi System",
       period: "2020 - 2021",
-      description:
-        "Performed hardware and software troubleshooting, handled pre-shipment quality checks, configured operating systems, and ensured data integrity through backups and recovery operations.",
+      description: "Performed hardware and software troubleshooting, handled pre-shipment quality checks, configured operating systems, and ensured data integrity through backups and recovery operations.",
       technologies: ["Windows", "Linux", "Hardware", "Software", "Network"],
     },
     {
       title: "IT Support Technician",
       company: "Digital Alliance ID",
       period: "Nov 2018 - Dec 2018",
-      description:
-        "Troubleshooted and repaired computer hardware, diagnosed network issues, and ensured all refurbished devices met performance and quality standards.",
+      description: "Troubleshooted and repaired computer hardware, diagnosed network issues, and ensured all refurbished devices met performance and quality standards.",
       technologies: ["Windows", "Mikrotik", "Remote Desktop", "Software", "Hardware"],
     },
   ];
@@ -97,12 +79,8 @@ const Experience = () => {
           <Badge variant="secondary" className="mb-4">
             Experience
           </Badge>
-          <h2 className="text-4xl sm:text-5xl font-bold tracking-tight">
-            Professional Journey
-          </h2>
-          <p className="text-muted-foreground mt-2 sm:mt-4 text-lg">
-            A timeline of my professional growth and key achievements
-          </p>
+          <h2 className="text-4xl sm:text-5xl font-bold tracking-tight">Professional Journey</h2>
+          <p className="text-muted-foreground mt-2 sm:mt-4 text-lg">A timeline of my professional growth and key achievements</p>
         </div>
 
         <div className="relative">
