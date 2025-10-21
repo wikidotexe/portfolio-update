@@ -22,6 +22,8 @@ export const NavMenu = ({ className, ...props }: NavigationMenuProps) => {
           { name: "Experience", id: "experience" },
           { name: "Certificate", id: "certificate" },
           { name: "Projects", id: "projects" },
+          { name: "Skills", id: "skills" },
+          { name: "Contact", id: "contact" },
         ].map((item) => (
           <NavigationMenuItem key={item.id}>
             <NavigationMenuLink asChild>
