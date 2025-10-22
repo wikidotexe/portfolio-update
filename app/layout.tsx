@@ -12,7 +12,7 @@ const geistSans = Geist({
 export const metadata: Metadata = {
   title: "Wikidotexe | Dwiki Arlian Maulana",
   description: "Portfolio of Dwiki Arlian Maulana — IT Support & System Engineer with 4 years of experience optimizing systems, networks, and infrastructure.",
-  metadataBase: new URL("https://about.wikiarlianm.com"), // ganti sama domain kamu nanti
+  metadataBase: new URL("https://about.wikiarlianm.com"),
   openGraph: {
     title: "Wikidotexe | Dwiki Arlian Maulana",
     description: "Explore the portfolio of Dwiki Arlian Maulana — IT Support & System Engineer with 4 years of experience in system optimization, networking, and tech innovation.",
