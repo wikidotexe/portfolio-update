@@ -20,7 +20,7 @@ const ExperienceItem = ({ title, company, period, description, technologies }: E
       {/* Content */}
       <div className="space-y-3">
         <div className="flex items-center gap-3">
-          <div className="flex-shrink-0 size-9 bg-accent rounded-full flex items-center justify-center">
+          <div className="shrink-0 size-9 bg-accent rounded-full flex items-center justify-center">
             <Building2 className="size-5 text-muted-foreground" />
           </div>
           <span className="text-lg font-semibold">{company}</span>
@@ -82,7 +82,7 @@ const Experience = () => {
 
   return (
     <section id="experience" className="relative py-20 px-6">
-      <div className="max-w-screen-md mx-auto">
+      <div className="max-w-3xl mx-auto">
         <div className="text-center mb-12">
           <Badge variant="secondary" className="mb-4">
             Experience
