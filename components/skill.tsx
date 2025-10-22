@@ -30,7 +30,7 @@ const skills = [
 const Skills = () => {
   return (
     <section id="skills" className="relative py-20 px-6 bg-background text-foreground">
-      <div className="max-w-screen-md mx-auto text-center">
+      <div className="max-w-3xl mx-auto text-center">
         <Badge variant="secondary" className="mb-4">
           My Skills
         </Badge>

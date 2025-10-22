@@ -107,7 +107,7 @@ const Certificate = () => {
 
   return (
     <section id="certificate" className="relative py-20 px-6">
-      <div className="max-w-screen-md mx-auto">
+      <div className="max-w-3xl mx-auto">
         <div className="text-center mb-12">
           <Badge variant="secondary" className="mb-4">
             Certificates
