@@ -13,7 +13,6 @@ COPY .env.local .env
 # Build Next.js app
 RUN npm run build
 
-
 # ---------- STAGE 2: RUNNER ----------
 FROM node:20-alpine AS runner
 WORKDIR /app
