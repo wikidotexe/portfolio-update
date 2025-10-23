@@ -4,6 +4,8 @@ import "./globals.css";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import LoadingScreen from "@/components/LoadingScreen";
+import ThemeToggle from "@/components/ThemeToggle";
+import Script from "next/script";
 
 const geistSans = Geist({
   subsets: ["latin"],
@@ -52,6 +54,28 @@ export default function RootLayout({
         <Navbar />
         <main>{children}</main>
         <Footer />
+        {/* apply theme early to avoid flash */}
+        <Script id="theme-init" strategy="beforeInteractive">
+          {`
+            (function() {
+              try {
+                var theme = localStorage.getItem('theme');
+                if (theme === 'dark') {
+                  document.documentElement.classList.add('dark');
+                } else if (theme === 'light') {
+                  document.documentElement.classList.remove('dark');
+                } else {
+                  // no saved choice -> respect OS preference
+                  var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                  if (prefersDark) document.documentElement.classList.add('dark');
+                }
+              } catch (e) {}
+            })();
+          `}
+        </Script>
+
+        {children}
+        <ThemeToggle />
         <LoadingScreen />
       </body>
     </html>
