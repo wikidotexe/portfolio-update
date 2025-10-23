@@ -42,7 +42,7 @@ export default function ThemeToggle() {
       aria-pressed={theme === "dark"}
       aria-label="Toggle dark mode"
       title="Toggle dark mode"
-      className="fixed right-5 bottom-5 z-[9999] w-12 h-12 rounded-full flex items-center justify-center shadow-lg border transition-transform active:scale-95
+      className="fixed right-5 bottom-5 z-9999 w-12 h-12 rounded-full flex items-center justify-center shadow-lg border transition-transform active:scale-95
                  bg-white/90 dark:bg-white/5 border-black/5 dark:border-white/6 text-black dark:text-white"
     >
       {theme === "dark" ? (

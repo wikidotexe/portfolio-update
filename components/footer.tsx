@@ -24,7 +24,7 @@ const Footer = () => {
 
   return (
     <footer className="mt-20">
-      <div className="max-w-screen-md mx-auto px-6">
+      <div className="max-w-3xl mx-auto px-6">
         {/* Section atas: Logo + link navigasi */}
         <div className="py-12 flex flex-col justify-start items-center text-center">
           <Logo />
