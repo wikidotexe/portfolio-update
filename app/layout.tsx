@@ -73,8 +73,6 @@ export default function RootLayout({
             })();
           `}
         </Script>
-
-        {children}
         <ThemeToggle />
         <LoadingScreen />
       </body>
