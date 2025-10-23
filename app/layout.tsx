@@ -43,36 +43,29 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <body className={`${geistSans.className} antialiased`}>
-        <Navbar />
-        <main>{children}</main>
-        <Footer />
-        {/* apply theme early to avoid flash */}
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        {/* inject theme BEFORE React mounts */}
         <Script id="theme-init" strategy="beforeInteractive">
           {`
             (function() {
               try {
-                var theme = localStorage.getItem('theme');
-                if (theme === 'dark') {
-                  document.documentElement.classList.add('dark');
-                } else if (theme === 'light') {
-                  document.documentElement.classList.remove('dark');
-                } else {
-                  // no saved choice -> respect OS preference
-                  var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-                  if (prefersDark) document.documentElement.classList.add('dark');
-                }
+                const storedTheme = localStorage.getItem('theme');
+                const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                const isDark = storedTheme === 'dark' || (!storedTheme && prefersDark);
+                if (isDark) document.documentElement.classList.add('dark');
+                else document.documentElement.classList.remove('dark');
               } catch (e) {}
             })();
           `}
         </Script>
+      </head>
+      <body className={`${geistSans.className} antialiased`}>
+        <Navbar />
+        <main>{children}</main>
+        <Footer />
         <ThemeToggle />
         <LoadingScreen />
       </body>

@@ -55,11 +55,19 @@ const Email = () => {
         <p className="text-muted-foreground mt-2 sm:mt-4 text-lg">Got a question or project idea? Let’s connect!</p>
 
         <form onSubmit={handleSubmit} className="mt-10 space-y-5">
-          <Input type="text" name="name" placeholder="Your Name" value={formData.name} onChange={handleChange} required className="bg-muted border border-accent/30 focus:border-primary/50 transition-all" />
+          <Input type="text" name="name" placeholder="Your Name" value={formData.name} onChange={handleChange} required autoComplete="name" className="bg-muted border border-accent/30 focus:border-primary/50 transition-all" />
 
-          <Input type="email" name="email" placeholder="Your Email" value={formData.email} onChange={handleChange} required className="bg-muted border border-accent/30 focus:border-primary/50 transition-all" />
+          <Input type="email" name="email" placeholder="Your Email" value={formData.email} onChange={handleChange} required autoComplete="email" className="bg-muted border border-accent/30 focus:border-primary/50 transition-all" />
 
-          <Textarea name="message" placeholder="Your Message..." value={formData.message} onChange={handleChange} required className="bg-muted border border-accent/30 focus:border-primary/50 transition-all min-h-[150px]" />
+          <Textarea
+            name="message"
+            placeholder="Your Message..."
+            value={formData.message}
+            onChange={handleChange}
+            required
+            autoComplete="off"
+            className="bg-muted border border-accent/30 focus:border-primary/50 transition-all min-h-[150px]"
+          />
 
           <Button type="submit" disabled={loading} className="w-full rounded-full font-semibold flex items-center justify-center gap-2">
             {loading ? (

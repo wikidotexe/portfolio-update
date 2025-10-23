@@ -5,7 +5,6 @@ import { cn } from "@/lib/utils";
 import { NavigationMenuProps } from "@radix-ui/react-navigation-menu";
 
 export const NavMenu = ({ className, ...props }: NavigationMenuProps) => {
-  // fungsi buat smooth scroll
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
     e.preventDefault();
     const section = document.getElementById(targetId);

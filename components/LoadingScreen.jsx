@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import "./loader.css";
+import "./css/loader.css";
 
 export default function LoadingScreen() {
   const [isLoading, setIsLoading] = useState(true);
